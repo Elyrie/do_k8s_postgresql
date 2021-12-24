@@ -77,11 +77,11 @@ For connecting a service is created inside the Kubernetes cluster. That can be s
 
 Now that the service is running we need to forward ports to access the database. That can be done with command `kubectl describe service mycluster`. After that we can access the database with a second terminal and our previously set credentials with command `mysqlsh -h127.0.0.1 -P6446 -uroot -p`.
 
-![MySQL](screenshots/mysql.png)
+![MySQL](./screenshots/mysql.png)
 
 ## Conclusion
 
 As we can see from the DO Kubernetes dashboard, we have 3 running InnoDB-clusters for reduntant access for our database and Kubernetes creates new pods if something would happen to a cluster pod.  
 
-![Pods](screenshots/pods.png)
+![Pods](./screenshots/pods.png)
 
